@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import webHeader from './webHeader.jpeg';
 
 export default function Header() {

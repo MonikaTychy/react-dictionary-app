@@ -1,0 +1,18 @@
+.Footer {
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.Footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #8B8F5D;
+    transition: font-size 500ms;
+}
+
+.Footer a:hover {
+    color: #B75724;
+    font-size: 16px;
+}

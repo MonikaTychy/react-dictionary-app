@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Dictionary from './Dictionary';
+import Footer from './Footer';
 
 export default function App() {
   return (
@@ -11,11 +12,7 @@ export default function App() {
      <main>
       <Dictionary />
      </main>
-     <footer>
-      <small>Coded by Monika Tychy, 
-        <a href='https://github.com/MonikaTychy/react-dictionary-app' target="_blank" rel="noreferrer"> open-sourced on GitHub</a> and 
-        <a href='https://fantastic-macaron-9eb9ce.netlify.app/' target="_blank" rel="noreferrer"> hosted on Netlify.</a></small>
-     </footer>
+     <Footer />
      </div>
     </div>
   );
