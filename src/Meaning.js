@@ -10,21 +10,17 @@ export default function Meaning(props) {
                 <div key={index}>
                  <p className='definition'><span>definiton:</span> {definition.definition}</p>
                  <p className='example'>{definition.example !== undefined ? `example: ${definition.example}` : null}</p>
+                 <div>{definition.synonyms.map((synonym, index) => {
+                   return (
+                     <p key={index} className='synonym'><span>similar: </span>{synonym}</p>
+                    );
+                    })}
+                 </div>
                 </div>
             );
         })}
         </div>
-        <div className='synonym'>{props.meaning.synonyms.map((synonym, index) => {
-           return (
-                <p key={index}>similar word:
-                <ul>
-                <li>{synonym}</li>
-                </ul>
-                </p>
-            );
-        })}
-
-        </div>
+        
         </div>
     );
 }
