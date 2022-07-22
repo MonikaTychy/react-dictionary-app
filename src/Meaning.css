@@ -1,0 +1,41 @@
+.Meaning {
+    background-color: aquamarine;
+}
+
+.Meaning h4, p {
+margin: 0;
+}
+
+.Meaning h4 {
+    text-align: center; 
+}
+
+.Meaning p {
+    text-align: left; 
+}
+
+.Meaning .definition {
+    font-size: 16px;
+}
+
+.Meaning .definition span,
+.Meaning .example span {
+    font-weight: bold;
+}
+
+.Meaning .example {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.Meaning .synonymContainer {
+    text-align: left;
+}
+
+.Meaning .synonym {
+    color: red;
+    padding-right: 5px;
+    display: inline-block;
+    text-align: left;
+}
+

@@ -1,0 +1,23 @@
+.SearchResults {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SearchResults .SearchedWord {
+    flex: 1;
+    flex: 100%;
+    background-color: blueviolet;
+}
+
+.SearchResults .SearchedWord h2 {
+    text-transform: uppercase;
+}
+
+.SearchResults .WordMeanings {
+    flex: 2;
+}
+
+.SearchResults .WordPhotos {
+    flex: 1;
+    background-color: orange;
+}
