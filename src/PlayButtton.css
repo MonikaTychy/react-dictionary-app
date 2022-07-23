@@ -1,0 +1,21 @@
+:root {
+    --fa-primary-color: #8B8F5D;
+    --fa-secondary-color: #B75724;
+    --fa-background-color: #E6D0C5;
+  }
+
+button {
+    color: var(--fa-primary-color);
+    border: 1px solid var(--fa-primary-color);
+    background-color: var(--fa-background-color);
+    border-radius: 3px;
+    padding: 6px 5px;
+    position: relative;
+    bottom: -3px;
+  }
+
+button:hover {
+    color: var(--fa-secondary-color);
+    border: 1px solid var(--fa-secondary-color);
+    transition: ease-in-out 200ms;
+  }

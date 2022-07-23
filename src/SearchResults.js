@@ -1,14 +1,14 @@
 import React from 'react';
 import './SearchResults.css';
 import Meaning from './Meaning';
+import PlayButtton from './PlayButtton';
 
 export default function SearchResults(props) {
-console.log(props);
     if (props.result) {
         return (
             <div className='SearchResults'>
                 <div className='SearchedWord'>
-                    <div>🎵</div>
+                    <PlayButtton audioLink={props.result.phonetics[0].audio} />
                  <h2>{props.result.word}</h2>
                  <p>{props.result.phonetic}</p>
                 </div>
