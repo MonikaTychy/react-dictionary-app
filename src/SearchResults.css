@@ -1,7 +1,7 @@
 :root {
     --primary-color: #8B8F5D;
     --secondary-color: #B75724;
-    --background-color: #E6D0C5;
+    --background-color: #f5e8e2;
     --border-color: #7E5E53;
   }
 
@@ -12,6 +12,7 @@
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
     border-radius: 4px;
+    box-shadow: 0 0 10px 2px var(--secondary-color), 0 0 10px 5px var(--background-color);
   }
 
 .SearchResults {
@@ -21,11 +22,10 @@
 
 .SearchResults .SearchedWord {
     flex: 1;
-    flex: 100%;
-   
+    flex: 100%; 
     display: inline-flex;
     justify-content: center;
-    padding: 15px 0;;
+    padding: 15px 0;
 }
 
 .SearchResults .SearchedWord h2 {

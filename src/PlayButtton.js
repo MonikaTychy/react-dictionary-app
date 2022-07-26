@@ -10,12 +10,16 @@ function togglePlay() {
     audioElem.current.play();
 }
 
+if (props.audioLink.length) {
     return (
         <div className='PlayButton'>
-            <audio src={props.audioLink} ref={audioElem} />
+            <audio src={props.audioLink[0].audio} ref={audioElem} />
         <button onClick={togglePlay}>
           <i className="fa-solid fa-volume-high fa-xl" id='volumeIcon'></i>
         </button>
         </div>
     );
+} else {
+    return null;
+}
 }
