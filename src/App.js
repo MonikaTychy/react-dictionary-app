@@ -9,10 +9,8 @@ export default function App() {
     <div className="App">
       <div className='container'>
       <Header />
-     <main>
       <Dictionary />
-     </main>
-     <Footer />
+      <Footer />
      </div>
     </div>
   );
