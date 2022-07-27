@@ -41,7 +41,7 @@ export default function Dictionary () {
      <div className='Dictionary'>
        <div className='SearchEngine'>
          <form onSubmit={handleSubmit}>
-         <input type="search" onChange={updateKeyword}/>
+         <input type='search' onChange={updateKeyword} placeholder='Search for a word' />
          </form>
        </div>
       <SearchResults result={result} photos={photos} />

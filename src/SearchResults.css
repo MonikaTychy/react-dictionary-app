@@ -2,17 +2,22 @@
     --primary-color: #8B8F5D;
     --secondary-color: #B75724;
     --background-color: #f5e8e2;
+    --background-color2: #E38351;
     --border-color: #7E5E53;
   }
+  .SearchResults {
+      border-radius: 4px;
+      box-shadow: 0 8px 20px 0px var(--background-color2);
+      border: 1px solid var(--border-color);
+      margin-top: 20px;
+  }
 
-  .SearchResults,
   .SearchResults .SearchedWord,
   .SearchResults .WordMeanings,
   .SearchResults .WordPhotos {
     background-color: var(--background-color);
-    border: 1px solid var(--border-color);
+    border: 1px ridge var(--border-color);
     border-radius: 4px;
-    box-shadow: 0 0 10px 2px var(--secondary-color), 0 0 10px 5px var(--background-color);
   }
 
 .SearchResults {
@@ -25,12 +30,14 @@
     flex: 100%; 
     display: inline-flex;
     justify-content: center;
-    padding: 15px 0;
+    padding: 10px;
+    background-color: var(--background-color2);
 }
 
-.SearchResults .SearchedWord h2 {
+.SearchResults .SearchedWord h1 {
     text-transform: uppercase;
     margin: 0 30px;
+    font-size: 24px;
 }
 
 .SearchResults .SearchedWord p {
@@ -41,8 +48,16 @@
 
 .SearchResults .WordMeanings {
     flex: 2;
+    padding: 10px;
 }
 
 .SearchResults .WordPhotos {
     flex: 1;
+    padding: 10px;
+}
+
+@media (max-width: 375px) {
+      .SearchResults .WordPhotos {
+          display: none;
+    }
 }

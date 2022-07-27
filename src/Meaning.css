@@ -2,9 +2,11 @@
 margin: 0;
 }
 
-.Meaning h4 {
+.Meaning h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0;
     text-align: center; 
-    padding-top: 20px;
 }
 
 .Meaning p {
@@ -13,7 +15,7 @@ margin: 0;
 
 .Meaning .definition {
     font-size: 16px;
-    margin-top: 15px;
+    margin: 10px 0;
 }
 
 .Meaning .definition span,
