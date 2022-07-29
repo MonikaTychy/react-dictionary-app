@@ -8,7 +8,7 @@ export default function Photos(props) {
                {props.photos.map(function(photo, index) {
                   return (
                     <div key={index} >
-                     <img src={photo.src.small} alt={props.wordName} />
+                    <a href={photo.url} target='_blank' rel='noreferrer' title='link do strony Pexels.com'><img src={photo.src.tiny} alt={props.wordName} /></a>
                     </div>
                   );
                })}

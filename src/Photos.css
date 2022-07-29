@@ -5,6 +5,14 @@
     --border-color: #7E5E53;
   }
 
+.Photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
 .Photos > div {
     margin: 10px 5px;
 }
@@ -17,7 +25,13 @@
 }
 
 @media (max-width: 480px) {
+    .Photos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     .Photos > div {
-        display: inline-block;
+        flex: 0 0 33.333333%;
     }
 }
