@@ -33,7 +33,7 @@
     align-items: baseline;
 }
 
-.SearchResults .SearchedWord h1 {
+.SearchResults .SearchedWord h2 {
     text-transform: uppercase;
     margin: 0 30px;
     font-size: 24px;
@@ -67,7 +67,7 @@
         flex: 1;
         flex: 100%; 
     }
-    .SearchResults .SearchedWord h1 {
+    .SearchResults .SearchedWord h2 {
         font-size: 20px;
     }
 }

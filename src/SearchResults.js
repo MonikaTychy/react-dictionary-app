@@ -10,7 +10,7 @@ export default function SearchResults(props) {
             <div className='SearchResults'>
                 <div className='SearchedWord'>
                     <PlayButtton audioLink={props.result.phonetics} />
-                 <h1>{props.result.word}</h1>
+                 <h2>{props.result.word}</h2>
                  <p>{props.result.phonetic}</p>
                 </div>
                 <div className='WordPhotos'>
