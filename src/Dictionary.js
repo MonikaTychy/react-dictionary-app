@@ -21,7 +21,7 @@ export default function Dictionary () {
     function search() {
     // documentation https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(showDictionaryResponse).catch(err => {setResult(null); console.log(err)});
+    axios.get(apiUrl).then(showDictionaryResponse).catch(err => {setResult(null); setLoaded(true);});
 
     // documentation https://www.pexels.com/pl-pl/api/documentation/?
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
@@ -44,10 +44,10 @@ export default function Dictionary () {
      <div className='Dictionary'>
        <div className='SearchEngine'>
          <form onSubmit={handleSubmit}>
-         <input type='search' onChange={updateKeyword} placeholder='Search for a word' />
+         <input type='search' onChange={updateKeyword} placeholder='search for a word' />
          </form>
        </div>
-       {result !== null ? (<><SearchResults result={result} photos={photos} /></>) : (<p>Sorry</p>)}
+       {result !== null ? (<><SearchResults result={result} photos={photos} /></>) : (<p className='errorMsg'>Sorry, we don't have this word definition in our database.</p>)}
         </div>
     );
     } else {

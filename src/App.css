@@ -1,6 +1,6 @@
 .App {
-  max-height: 100%;
-  max-width: 70%;
+  min-height: 100vh;
+  max-width: 70vw;
   margin: 20px auto;
   text-align: center;
   font-family: 'Inter', sans-serif;
