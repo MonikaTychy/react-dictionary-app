@@ -4,6 +4,17 @@
     --fa-background-color: #E6D0C5;
   }
 
+.Phonetics {
+  display: inline-flex;
+  margin: 10px 20px 0px 20px;
+}
+
+.Phonetics p {
+  margin-left: 10px;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
 button {
     color: var(--fa-primary-color);
     border: 1px solid var(--fa-primary-color);

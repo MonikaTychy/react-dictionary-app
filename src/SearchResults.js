@@ -1,17 +1,21 @@
 import React from 'react';
 import './SearchResults.css';
 import Meaning from './Meaning';
-import PlayButtton from './PlayButtton';
+import Phonetics from './Phonetics';
 import Photos from './Photos';
 
 export default function SearchResults(props) {
+    console.log(props.result);
     if (props.result) {
         return (
             <div className='SearchResults'>
                 <div className='SearchedWord'>
-                    <PlayButtton audioLink={props.result.phonetics} />
-                 <h2>{props.result.word}</h2>
-                 <p>{props.result.phonetic}</p>
+                  <h2>{props.result.word}</h2>
+                  {props.result.phonetics.map(function(phonetic, index) {
+                    return (
+                         <Phonetics key={index} phonetic={phonetic} />
+                    );
+                  })}
                 </div>
                 <div className='WordPhotos'>
                     <Photos photos={props.photos} wordName={props.result.word} />
